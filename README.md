@@ -1,18 +1,28 @@
-EX.10 IMPLEMENTATION OF PAGE REPLACEMENT ALGORITHMS
-AIM:
-To write a C program to implement Page Replacement technique using FIFO
+# EX.10 IMPLEMENTATION OF PAGE REPLACEMENT ALGORITHMS
 
-ALGORITHM:
-Start the program.
-Get the number of pages and their sequence from the user
-Get the number of available page frames from the user.
-In FIFO, on the basics of first in first out, replace the pages respectively, then find number of page faults occurred.
-Compare all frames with incoming page�6. If the incoming page is already available in page frame, set the match flag to indicate ‘no need of page replacement’.
-If the incoming page is not available in all frames, then remove the page which is loaded into the memory long back and give space for new incoming page.
-Increment the ‘number of Page faults counter
-Print the number of page faults.
-Stop the program.
-PROGRAM:
+## AIM:
+  To write a C program to implement Page Replacement technique using FIFO
+
+
+## ALGORITHM:
+
+1. Start the program.
+2. Get the number of pages and their sequence from the user
+3. Get the number of available page frames from the user.
+4. In FIFO, on the basics of first in first out, replace the pages respectively, then
+find number of page faults occurred.
+5. Compare all frames with incoming page6. If the incoming page is already available in page frame, set the match flag to
+indicate ‘no need of page replacement’.
+7. If the incoming page is not available in all frames, then remove the page
+which is loaded into the memory long back and give space for new incoming
+page.
+8. Increment the ‘number of Page faults counter
+9. Print the number of page faults.
+10. Stop the program.
+
+
+## PROGRAM:
+```
 #include<stdio.h>
 int main()
 {
@@ -48,26 +58,39 @@ printf("\n");
 printf("\nPage Fault Is %d",count);
 return 0;
 }
-OUTPUT:
-image
-RESULT:
-Thus the implementation of FIFO page replacement is successfully executed.
+```
 
-PAGE REPLACEMENT ALGORITHM (LRU)
-AIM:
-To write a C program to implement Page Replacement technique using LRU
+## OUTPUT:
 
-ALGORITHM:
-Start the program
-Get the number of pages and their sequence from theuser
-Get the number of available page frames from theuser.
-In LRU replace the page that has not been used for the longest period oftime.
-Compare all frames with incoming page�6. If the incoming page is already available in page frame, set the match flag to indicate ‘no need of page replacement’.
-If the incoming page is not available in all frames, then remove the page which has not been used for the longest period oftime.
-Increment the ‘number of Page faults’ counter
-Print the number of page faults.
-Stop the program.
-PROGRAM:
+<img width="217" alt="image" src="https://github.com/AlluguriSrikrishnateja/OS-EX.10-IMPLEMENTATION-OF-PAGE-REPLACEMENT-ALGORITHMS/assets/118343892/eaf4e3e6-b4d6-4f31-b3f2-6855d80b03f6">
+
+
+
+## RESULT:
+
+  Thus the implementation of FIFO page replacement is successfully executed.
+
+# PAGE REPLACEMENT ALGORITHM (LRU)
+
+## AIM:
+  To write a C program to implement Page Replacement technique using LRU
+
+## ALGORITHM:
+
+1. Start the program
+2. Get the number of pages and their sequence from theuser
+3. Get the number of available page frames from theuser.
+4. In LRU replace the page that has not been used for the longest period oftime.
+5. Compare all frames with incoming page6. If the incoming page is already available in page frame, set the match flag to
+indicate ‘no need of page replacement’.
+7. If the incoming page is not available in all frames, then remove the page which
+has not been used for the longest period oftime.
+8. Increment the ‘number of Page faults’ counter
+9. Print the number of page faults.
+10. Stop the program.
+
+## PROGRAM:
+```
 #include<stdio.h>
 main()
 {
@@ -141,24 +164,35 @@ printf("\n");
 }
 printf("\nThe no of page faults is %d",c);
 }
-OUTPUT:
-image
-RESULT:
-Thus the implementation of LRU page replacement is successfully executed.
+```
+## OUTPUT:
 
-PAGE REPLACEMENT ALGORITHM (OPR)
-AIM:
-To write a C program to implement Page Replacement technique using OPR
+<img width="227" alt="image" src="https://github.com/AlluguriSrikrishnateja/OS-EX.10-IMPLEMENTATION-OF-PAGE-REPLACEMENT-ALGORITHMS/assets/118343892/072b3d4f-d055-44eb-954c-b3616bf07a6d">
 
-ALGORITHM:
-Start the program.
-Take the input of pages as an array.
-Look for the page allocated is present in near future, if no then replace that page in the memory with new page,
-If page already present increment hit, else increment miss.
-Repeat till we reach the last element of the array.
-Print the number of hits and misses.
-Stop the program.
-PROGRAM:
+
+## RESULT:
+
+  Thus the implementation of LRU page replacement is successfully executed.
+
+# PAGE REPLACEMENT ALGORITHM (OPR)
+
+## AIM:
+
+  To write a C program to implement Page Replacement technique using OPR
+  
+## ALGORITHM:
+
+1. Start the program.
+2. Take the input of pages as an array.
+3. Look for the page allocated is present in near future, if no then replace that page
+in the memory with new page,
+4. If page already present increment hit, else increment miss.
+5. Repeat till we reach the last element of the array.
+6. Print the number of hits and misses.
+7. Stop the program.
+
+## PROGRAM:
+```
 #include<stdio.h>
 int main()
 {
@@ -194,7 +228,12 @@ printf("\n");
 printf("Page Fault Is %d",count);
 return 0;
 }
-OUTPUT:
-image
-RESULT:
-Thus the implementation of OPR page replacement is successfully executed.
+```
+## OUTPUT:
+<img width="185" alt="image" src="https://github.com/AlluguriSrikrishnateja/OS-EX.10-IMPLEMENTATION-OF-PAGE-REPLACEMENT-ALGORITHMS/assets/118343892/533d39b5-ab2e-40a8-aadd-26b013b4d023">
+
+
+
+## RESULT:
+
+  Thus the implementation of OPR page replacement is successfully executed.
